@@ -2,9 +2,9 @@ import React from 'react';
 import { Box, Container } from '@mui/material';
 
 import '../style/css/style.css';
-
-import NavAndLogo from './Sections/NavAndLogo/NavAndLogo';
-import VideoBackground from './Sections/VideoBackground/VideoBackground';
+import Hero from './Sections/Hero/Hero';
+import NavBar from './Sections/NavBar/NavBar';
+import VideoBackground from './Sections/Hero/Hero';
 import Welcome from './Sections/Welcome/Welcome';
 import Portfolio from './Sections/Portfolio/Portfolio';
 import Testimonial from './Sections/Testimonial/Testimonial_OLD';
@@ -20,12 +20,12 @@ const Home = () => {
 	return (
 		<>
 			<Container className='autoshow transparent' component='header' maxWidth={false}>
-				<NavAndLogo />
+				<NavBar />
 			</Container>
 
 			<Box id='content' className='no-bottom no-top'>
 				<div id='top'></div>
-				<VideoBackground />
+				<Hero />
 				<Welcome />
 				<Portfolio />
 				<Testimonial />

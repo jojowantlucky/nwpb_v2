@@ -970,3 +970,47 @@
 		background-attachment: scroll;
 	}
 }
+
+#menu-btn {
+	display: none;
+	float: right;
+	margin-top: 0px;
+	width: 36px;
+	height: 36px;
+	padding: 6px;
+	text-align: center;
+	cursor: pointer;
+
+	&:before {
+		font-family: FontAwesome;
+		content: '\f0c9';
+		font-size: 24px;
+	}
+
+	&:hover {
+		background: #fff;
+
+		&:before {
+			color: #222;
+		}
+	}
+}
+
+// header {
+// 	&.header-mobile {
+// 		&.header-light {
+// 			background: none;
+
+// 			#menu-btn {
+// 				background: none;
+// 				color: #222;
+
+// 				&:hover {
+// 					background: none;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	#menu-btn;
+// }
