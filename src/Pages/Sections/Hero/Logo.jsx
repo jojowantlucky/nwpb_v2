@@ -9,6 +9,7 @@ const Logo = () => {
 			<Image
 				src={logo}
 				style={{
+					color: 'white',
 					width: '250px',
 					height: '250px',
 					marginTop: '10rem',

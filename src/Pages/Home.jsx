@@ -4,7 +4,6 @@ import { Box, Container } from '@mui/material';
 import '../style/css/style.css';
 import Hero from './Sections/Hero/Hero';
 import NavBar from './Sections/NavBar/NavBar';
-import VideoBackground from './Sections/Hero/Hero';
 import Welcome from './Sections/Welcome/Welcome';
 import Portfolio from './Sections/Portfolio/Portfolio';
 import Testimonial from './Sections/Testimonial/Testimonial_OLD';
