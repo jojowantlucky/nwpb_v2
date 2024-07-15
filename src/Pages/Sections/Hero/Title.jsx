@@ -3,7 +3,7 @@ import { Typography, Grid } from '@mui/material';
 
 const Title = () => {
 	return (
-		<Grid item className='mask' xs={12} textAlign={'center'} minWidth={'80vw'}>
+		<Grid item className='mask'>
 			<Typography
 				variant='h2'
 				color={'primary.light'}
@@ -12,7 +12,8 @@ const Title = () => {
 				letterSpacing='3rem'
 				lineHeight={'7rem'}
 				className='wow fadeInUp'
-				data-wow-delay='1s'>
+				data-wow-delay='1s'
+				textAlign={'center'}>
 				NOTEWORTHY PHOTO BOOTHS
 			</Typography>
 		</Grid>

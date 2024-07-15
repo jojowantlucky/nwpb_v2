@@ -144,3 +144,41 @@
 		-webkit-transform: rotate(360deg);
 	}
 }
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.pulse {
+	/* Button default styles, customize them to match your button */
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #3498db;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	/* Apply the pulse animation */
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

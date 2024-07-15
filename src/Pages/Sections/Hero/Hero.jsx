@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react';
+import { Grid } from '@mui/material';
 import Logo from './Logo';
 import Title from './Title';
 import Video from './Video';
-import { Grid } from '@mui/material';
+import CTAs from './CTAs';
 
 const Hero = () => {
 	return (
@@ -21,9 +22,11 @@ const Hero = () => {
 						alignContent='center'
 						alignItems='center'
 						spacing={8}
-						maxWidth={12}>
+						xs={8}
+						>
 						<Logo />
 						<Title />
+						<CTAs />
 					</Grid>
 				</div>
 

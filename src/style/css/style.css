@@ -921,6 +921,40 @@
     -webkit-transform: rotate(360deg);
   }
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  /* Button default styles, customize them to match your button */
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Apply the pulse animation */
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* 
 /* 
 	Section Background (bg.css)
@@ -1252,6 +1286,9 @@ a.btn-slider:hover {
   75% {
     opacity: 0;
   }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
 }
 .flash {
   -webkit-animation-name: flash;
@@ -2254,6 +2291,7 @@ a.btn-slider:hover {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+  animation-duration: 30s;
 }
 @-webkit-keyframes fadeInDown {
   from {
@@ -4097,9 +4135,6 @@ body #homepage {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-}
-.fadeInUp {
-  animation-name: fadeInUp;
 }
 a {
   transition: 0.3s;
