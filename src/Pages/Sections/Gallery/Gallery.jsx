@@ -1,9 +1,12 @@
 import React from 'react';
+import { Grid } from '@mui/material';
 
 const Gallery = () => {
 	return (
-		<section
-			id='section-portfolio'
+		<Grid
+			component='section'
+			sx={{ backgroundSize: 'cover', backgroundColor: 'rgb(248,248,248' }}
+			id='section-gallery'
 			className='no-bottom no-top'
 			aria-label='section-portfolio'
 			data-bgcolor='#f8f8f8'>
@@ -79,6 +82,7 @@ const Gallery = () => {
 						</a>
 					</div>
 				</div>
+
 				<div className='item photography illustration mobile gallery-item'>
 					<div className='picframe wow'>
 						<a className='image-popup' href='images/portfolio/pf%20(4).jpg'>
@@ -118,7 +122,7 @@ const Gallery = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</Grid>
 	);
 };
 
