@@ -8,7 +8,6 @@ function App() {
 			background: {
 				default: '#555',
 			},
-
 		},
 	});
 

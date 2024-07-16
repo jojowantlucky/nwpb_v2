@@ -5,7 +5,7 @@ import '../style/css/style.css';
 import Hero from './Sections/Hero/Hero';
 import NavBar from './Sections/NavBar/NavBar';
 import Welcome from './Sections/Welcome/Welcome';
-import Portfolio from './Sections/Portfolio/Portfolio';
+import Gallery from './Sections/Gallery/Gallery';
 import Testimonial from './Sections/Testimonial/Testimonial_OLD';
 import Process from './Sections/Process/Process';
 import PricingTable from './Sections/PricingTable/PricingTable';
@@ -26,7 +26,7 @@ const Home = () => {
 				<div id='top'></div>
 				<Hero />
 				<Welcome />
-				<Portfolio />
+				<Gallery />
 				<Testimonial />
 				<Process />
 				<PricingTable />

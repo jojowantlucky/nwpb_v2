@@ -3,10 +3,10 @@ import { Typography, Grid } from '@mui/material';
 
 const Title = () => {
 	return (
-		<Grid item className='mask'>
+		<Grid item xs={12} className='mask'>
 			<Typography
 				variant='h2'
-				color={'primary.light'}
+				color={'primary'}
 				fontWeight={'light'}
 				fontFamily={'Dosis'}
 				letterSpacing='3rem'

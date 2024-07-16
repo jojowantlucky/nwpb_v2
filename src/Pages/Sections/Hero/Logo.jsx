@@ -10,13 +10,13 @@ const Logo = () => {
 				src={logo}
 				style={{
 					color: 'white',
-					width: '250px',
-					height: '250px',
+					width: '150px',
+					height: '150px',
 					marginTop: '10rem',
 					margin: 'auto',
 					background: 'transparent',
 				}}
-				sx={{ className: 'fadeIn' }}
+				className='fadeIn'
 			/>
 			{/* <img className='logo' src='images/logo-2.png' alt='' /> */}
 		</Grid>

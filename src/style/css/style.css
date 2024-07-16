@@ -2291,7 +2291,7 @@ a.btn-slider:hover {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  animation-duration: 30s;
+  animation-duration: 3s;
 }
 @-webkit-keyframes fadeInDown {
   from {
