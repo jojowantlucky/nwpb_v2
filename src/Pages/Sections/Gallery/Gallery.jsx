@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 
 const Gallery = () => {
 	return (
@@ -10,36 +10,41 @@ const Gallery = () => {
 			className='no-bottom no-top'
 			aria-label='section-portfolio'
 			data-bgcolor='#f8f8f8'>
-			<div className='pt20 pb10' data-bgcolor='#dddddd'>
+			<Box pt={20} pb={10} data-bgcolor='#dddddd'>
 				<ul id='filters' className='text-center'>
 					<li>
 						<a href='#' data-filter='*' className='selected'>
-							all projects
+							all booths
 						</a>
 					</li>
 					<li>
 						<a href='#' data-filter='.illustration'>
-							illustration
+							open-air booth
 						</a>
 					</li>
 					<li>
 						<a href='#' data-filter='.mobile'>
-							mobile
+							enclosed booth
 						</a>
 					</li>
 					<li>
 						<a href='#' data-filter='.photography'>
-							photography
+							360&deg; booth
 						</a>
 					</li>
 					<li>
 						<a href='#' data-filter='.website'>
-							website
+							mirror station
+						</a>
+					</li>
+					<li>
+						<a href='#' data-filter='.selfie-station'>
+							selfie station
 						</a>
 					</li>
 				</ul>
 				<div className='clearfix'></div>
-			</div>
+			</Box>
 
 			<div
 				id='gallery'
