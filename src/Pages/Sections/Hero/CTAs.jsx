@@ -19,7 +19,7 @@ const CTAs = () => {
 						className='pulse'
 						color='primary'
 						size='large'
-						sx={{ backgroundColor: 'primary.light' }}>
+						sx={{ backgroundColor: 'primary' }}>
 						<CallRoundedIcon />
 					</IconButton>
 				</Grid>
@@ -28,7 +28,7 @@ const CTAs = () => {
 						className='pulse'
 						color='secondary'
 						size='large'
-						sx={{ backgroundColor: 'primary.light' }}>
+						sx={{ backgroundColor: 'primary' }}>
 						<RequestQuoteRoundedIcon />
 					</IconButton>
 				</Grid>

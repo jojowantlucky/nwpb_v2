@@ -2474,12 +2474,12 @@ a.btn-slider:hover {
   }
 }
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
-  to {
+  100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
@@ -4135,6 +4135,9 @@ body #homepage {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+.logo {
+  filter: drop-shadow(0 0 0.5rem #bdbdbd);
 }
 a {
   transition: 0.3s;

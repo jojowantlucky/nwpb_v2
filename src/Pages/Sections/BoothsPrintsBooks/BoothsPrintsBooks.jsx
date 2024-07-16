@@ -5,37 +5,7 @@ import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import PortraitIcon from '@mui/icons-material/Portrait';
 
-const Welcome = () => {
-	const style = {
-		position: 'relative',
-		width: '100%',
-		backgroundSize: 'cover',
-		animationDelay: '0s',
-		paddingTop: '1rem',
-		paddingBottom: '1rem',
-		marginTop: '2.5rem',
-		marginBottom: '2.5rem',
-		overflow: 'hidden',
-	};
-
-	const containerStyle = {
-		width: '100%',
-		paddingRight: '15px',
-		paddingLeft: '15px',
-		marginRight: 'auto',
-		marginLeft: 'auto',
-	};
-
-	/*
-i {
-			position: absolute;
-		}
-
-		.text {
-			padding-left: 70px;
-		}
-	*/
-
+const BoothsPrintsBooks = () => {
 	return (
 		<Grid
 			container
@@ -44,7 +14,9 @@ i {
 			justifyContent='space-around'
 			component='section'
 			id='section-welcome'
-			m={'auto'}>
+			m={'auto'}
+			mt={'4rem'}
+			mb={'4rem'}>
 			<Grid item xs={3} className='sequence wow fadeInUp animated'>
 				<Grid container m={'auto'}>
 					<Grid item xs={1} mr={'2rem'}>
@@ -137,4 +109,4 @@ i {
 	);
 };
 
-export default Welcome;
+export default BoothsPrintsBooks;

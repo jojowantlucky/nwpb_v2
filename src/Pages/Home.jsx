@@ -4,7 +4,7 @@ import { Box, Container } from '@mui/material';
 import '../style/css/style.css';
 import Hero from './Sections/Hero/Hero';
 import NavBar from './Sections/NavBar/NavBar';
-import Welcome from './Sections/Welcome/Welcome';
+import BoothsPrintsBooks from './Sections/BoothsPrintsBooks/BoothsPrintsBooks';
 import Gallery from './Sections/Gallery/Gallery';
 import Testimonial from './Sections/Testimonial/Testimonial_OLD';
 import Process from './Sections/Process/Process';
@@ -25,7 +25,7 @@ const Home = () => {
 			<Box id='content' className='no-bottom no-top'>
 				<div id='top'></div>
 				<Hero />
-				<Welcome />
+				<BoothsPrintsBooks />
 				<Gallery />
 				<Testimonial />
 				<Process />
