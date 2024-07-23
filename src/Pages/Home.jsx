@@ -6,7 +6,7 @@ import Hero from './Sections/Hero/Hero';
 import NavBar from './Sections/NavBar/NavBar';
 import BoothsPrintsBooks from './Sections/BoothsPrintsBooks/BoothsPrintsBooks';
 import Gallery from './Sections/Gallery/Gallery';
-import PhotoBooths from './Sections/PhotoBooths/Testimonial_OLD';
+import PhotoBooths from './Sections/PhotoBooths/PhotoBooths';
 import Process from './Sections/Process/Process';
 import PricingTable from './Sections/PricingTable/PricingTable';
 import FunFacts from './Sections/FunFacts/FunFacts';
