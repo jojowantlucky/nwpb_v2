@@ -1,22 +1,31 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/a11y';
+import 'swiper/css/autoplay';
+import 'swiper/css/mousewheel';
+
 import { Container, Typography, Paper, Box } from '@mui/material';
 
 const PhotoBooths = () => {
 	return (
-		<Container
+		<Box
 			component='section'
 			id='section-testimonial'
 			aria-label='section-testimonial'
 			data-bgcolor='#f8f8f8'>
-			<Box sx={{ backgroundColor: 'rgb(248, 248, 248)', backgroundSize: 'cover' }}>
+			<Container sx={{ backgroundColor: 'rgb(248, 248, 248)', backgroundSize: 'cover' }}>
 				<Swiper
 					spaceBetween={50}
 					slidesPerView={3}
+					modules={[Navigation, Pagination, Autoplay, A11y, Mousewheel]}
+					loop
+					mousewheel
+					autoplay={{ delay: 2500, disableOnInteraction: false }}
+					pagination={{ clickable: true, dynamicBullets: true }}
 					onSlideChange={() => console.log('slide change')}
 					onSwiper={(swiper) => console.log(swiper)}>
 					<SwiperSlide>
@@ -147,8 +156,8 @@ const PhotoBooths = () => {
 						</Paper>
 					</SwiperSlide>
 				</Swiper>
-			</Box>
-		</Container>
+			</Container>
+		</Box>
 	);
 };
 

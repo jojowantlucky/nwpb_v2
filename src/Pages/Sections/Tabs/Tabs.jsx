@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Process = () => {
+const Tabs = () => {
 	return (
 		<section
 			id='section-process'
@@ -92,4 +92,4 @@ const Process = () => {
 	);
 };
 
-export default Process;
+export default Tabs;
