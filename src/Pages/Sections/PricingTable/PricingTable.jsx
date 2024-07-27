@@ -1,121 +1,58 @@
+import { Box, Divider, Grid, Paper, Stack, Typography } from '@mui/material';
 import React from 'react';
+import CheckIcon from '@mui/icons-material/Check';
+import { TypeSpecimenTwoTone } from '@mui/icons-material';
 
 const PricingTable = () => {
 	return (
-		<section id='pricing-table'>
-			<div className='container'>
-				<div className='row'>
-					<div className='col-md-12'>
-						<div className='item pricing'>
-							<div className='container'>
-								<div className='row'>
-									<div className='col-sm-4'>
-										<div className='pricing-s1 mb30'>
-											<div className='top'>
-												<h2>Starter</h2>
-												<p className='price'>
-													<span className='currency'>$</span> <b>199</b>{' '}
-													<span className='month'>p/annual</span>
-												</p>
-											</div>
-											<div className='bottom'>
-												<ul>
-													<li>
-														<i className='icon_check'></i>Conceptual Overview
-													</li>
-													<li>
-														<i className='icon_check'></i>Styling Layout
-													</li>
-													<li>
-														<i className='icon_check'></i>Color Pallete &amp; Paint Chart
-													</li>
-													<li>
-														<i className='icon_check'></i>Budget Planning
-													</li>
-													<li>
-														<i className='icon_check'></i>1 Day Consultation
-													</li>
-												</ul>
-												<a href='' className='btn btn-custom'>
-													Sign Up Now
-												</a>
-											</div>
-										</div>
-									</div>
-									<div className='col-sm-4'>
-										<div className='pricing-s1 rec mb30'>
-											<div className='ribbon'>Recommend</div>
-											<div className='top'>
-												<h2>Intermediate</h2>
-												<p className='price'>
-													<span className='currency'>$</span> <b>299</b>{' '}
-													<span className='month'>p/annual</span>
-												</p>
-											</div>
-											<div className='bottom'>
-												<ul>
-													<li>
-														<i className='icon_check'></i>Conceptual Overview
-													</li>
-													<li>
-														<i className='icon_check'></i>Styling Layout
-													</li>
-													<li>
-														<i className='icon_check'></i>Color Pallete &amp; Paint Chart
-													</li>
-													<li>
-														<i className='icon_check'></i>Budget Planning
-													</li>
-													<li>
-														<i className='icon_check'></i>3 Days Consultation
-													</li>
-												</ul>
-												<a href='' className='btn btn-custom'>
-													Sign Up Now
-												</a>
-											</div>
-										</div>
-									</div>
-									<div className='col-sm-4'>
-										<div className='pricing-s1 mb30'>
-											<div className='top'>
-												<h2>Advanced</h2>
-												<p className='price'>
-													<span className='currency'>$</span> <b>499</b>{' '}
-													<span className='month'>p/annual</span>
-												</p>
-											</div>
-											<div className='bottom'>
-												<ul>
-													<li>
-														<i className='icon_check'></i>Conceptual Overview
-													</li>
-													<li>
-														<i className='icon_check'></i>Styling Layout
-													</li>
-													<li>
-														<i className='icon_check'></i>Color Pallete &amp; Paint Chart
-													</li>
-													<li>
-														<i className='icon_check'></i>Budget Planning
-													</li>
-													<li>
-														<i className='icon_check'></i>2 Weeks Consultation
-													</li>
-												</ul>
-												<a href='' className='btn btn-custom'>
-													Sign Up Now
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<Grid
+			spacing={4}
+			container
+			direction={'row'}
+			maxWidth={'xl'}
+			justifyContent={'center'}
+			alignItems={'center'}
+			xs={12}
+			component='section'
+			className='section-pricing-table'>
+			<Grid xs={3} item>
+				<Paper elevation={2} sx={{ minHeight: '600px', padding: '3rem' }}>
+					<Typography color='primary' variant='h5'>
+						Package Name 1
+					</Typography>
+					<Typography variant='subtitle1'>Sub title 1</Typography>
+					<Typography variant='subtitle2'>Starting at $899</Typography>
+
+					<Divider variant='middle' sx={{ marginBottom: '1rem' }} />
+					<Grid container direction='column'>
+						<Grid container spacing={2} direction='row' alignItems={'center'}>
+							<Grid xs={2} item>
+								<CheckIcon />
+							</Grid>
+							<Grid xs={10} item>
+								<Typography variant='body1'>Bullet Point 1</Typography>
+							</Grid>
+						</Grid>
+					</Grid>
+				</Paper>
+			</Grid>
+
+			<Grid xs={3} minHeight={100} minWidth={50} item>
+				<Paper elevation={8} sx={{ minHeight: '600px', padding: '3rem' }}>
+					<Typography color='primary' variant='h5'>
+						Package Name 2<Typography variant='subtitle1'>Sub title 1</Typography>
+					</Typography>
+				</Paper>
+			</Grid>
+
+			<Grid xs={3} minHeight={100} minWidth={50} item>
+				<Paper elevation={2} sx={{ minHeight: '600px', padding: '3rem' }}>
+					<Typography color='primary' variant='h5'>
+						Package Name 3<Typography variant='subtitle1'>Sub title 1</Typography>
+					</Typography>
+				</Paper>
+			</Grid>
+		</Grid>
 	);
 };
 

@@ -6,15 +6,16 @@ import Hero from './Sections/Hero/Hero';
 import NavBar from './Sections/NavBar/NavBar';
 import BoothsPrintsBooks from './Sections/BoothsPrintsBooks/BoothsPrintsBooks';
 import Gallery from './Sections/Gallery/Gallery';
-import PhotoBooths from './Sections/PhotoBooths/PhotoBooths';
-import Tabs from './Sections/Tabs/Tabs';
+import BookWithConfidence from './Sections/BookWithConfidence/BookWithConfidence';
+import TabsORIG from './Sections/Tabs/TabsORIG';
+import TabSection from './Sections/Tabs/TabSection';
+import PricingTableOrig from './Sections/PricingTable/PricingTableOrig';
 import PricingTable from './Sections/PricingTable/PricingTable';
 import FunFacts from './Sections/FunFacts/FunFacts';
 import Footer from './Sections/Footer/Footer';
 // import Switcher from '../Components/Switcher';
 import Preloader from '../Components/Preloader';
 import BackToTop from '../Components/BackToTop';
-import Tabs_NEW from './Sections/Tabs/Tab_NEW';
 
 const Home = () => {
 	return (
@@ -28,9 +29,10 @@ const Home = () => {
 				<Hero />
 				<BoothsPrintsBooks />
 				<Gallery />
-				<PhotoBooths />
-				<Tabs />
-				<Tabs_NEW />
+				<BookWithConfidence />
+				<TabSection />
+				<TabsORIG />
+				<PricingTableOrig />
 				<PricingTable />
 				<FunFacts />
 			</Box>

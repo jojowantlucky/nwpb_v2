@@ -1,14 +1,19 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y, Autoplay, Mousewheel } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+import { Container, Typography, Paper, Box } from '@mui/material';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/a11y';
 import 'swiper/css/autoplay';
-import 'swiper/css/mousewheel';
 
-import { Container, Typography, Paper, Box } from '@mui/material';
+/*
+1. Change 'section-testimonial' to 'section-bookwithconfidence'
+2. Center section title
+3. Inlude Yelp, WW, TK, Google, testimonials, BBB 
+*/
 
 const PhotoBooths = () => {
 	return (
@@ -17,11 +22,14 @@ const PhotoBooths = () => {
 			id='section-testimonial'
 			aria-label='section-testimonial'
 			data-bgcolor='#f8f8f8'>
+			<Typography variant='h4' color='secondary' p={'2rem'}>
+				Book With Confidence
+			</Typography>
 			<Container sx={{ backgroundColor: 'rgb(248, 248, 248)', backgroundSize: 'cover' }}>
 				<Swiper
 					spaceBetween={50}
 					slidesPerView={3}
-					modules={[Navigation, Pagination, Autoplay, A11y, Mousewheel]}
+					modules={[Navigation, Pagination, Autoplay, A11y]}
 					loop
 					mousewheel
 					autoplay={{ delay: 2500, disableOnInteraction: false }}
