@@ -9,8 +9,8 @@
 			"lines": [
 				{
 					"id": "0",
-					"checked": "checked",
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, harum"
+					"checked": "unchecked",
+					"description": "Lorem ipsum dolor sit "
 				},
 				{
 					"id": "1",
@@ -113,7 +113,7 @@
 				{
 					"id": "5",
 					"checked": "checked",
-					"description": "Dolor adipisicing elit."
+					"description": "Dolor adipisicing elit. "
 				}
 			]
 		}

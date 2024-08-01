@@ -24,7 +24,7 @@ const Home = () => {
 				<NavBar />
 			</Container>
 
-			<Box id='content' className='no-bottom no-top'>
+			<Box id='content' className='no-bottom no-top' display={'flex'} flexDirection={'column'}>
 				<div id='top'></div>
 				<Hero />
 				<BoothsPrintsBooks />
