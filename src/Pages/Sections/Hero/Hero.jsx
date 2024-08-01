@@ -21,9 +21,7 @@ const Hero = () => {
 						m={'auto'}
 						alignContent='center'
 						alignItems='center'
-						spacing={8}
-						xs={8}
-						>
+						spacing={8}>
 						<Logo />
 						<Title />
 						<CTAs />

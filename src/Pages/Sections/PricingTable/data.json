@@ -1,0 +1,121 @@
+{
+	"pkgs": [
+		{
+			"id": "package01",
+			"featured": "false",
+			"name": "Package Name 1",
+			"subTitle": "Sub title 1",
+			"startingAtPrice": "$899",
+			"lines": [
+				{
+					"id": "0",
+					"checked": "checked",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, harum"
+				},
+				{
+					"id": "1",
+					"checked": "checked",
+					"description": "Lorem ipsum dolor sit amet"
+				},
+				{
+					"id": "2",
+					"checked": "checked",
+					"description": "consectetur adipisicing elit. Voluptates, harum?"
+				},
+				{
+					"id": "3",
+					"checked": "unchecked",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+				},
+				{
+					"id": "4",
+					"checked": "unchecked",
+					"description": "Lorem, ipsum dolor."
+				},
+				{
+					"id": "5",
+					"checked": "checked",
+					"description": "Lorem, ipsum dolor adipisicing elit."
+				}
+			]
+		},
+		{
+			"id": "package02",
+			"featured": "true",
+			"name": "Package Name 2",
+			"subTitle": "Sub title 2",
+			"startingAtPrice": "$999",
+			"lines": [
+				{
+					"id": "0",
+					"checked": "checked",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, harum"
+				},
+				{
+					"id": "1",
+					"checked": "checked",
+					"description": "Lorem ipsum dolor sit amet"
+				},
+				{
+					"id": "2",
+					"checked": "checked",
+					"description": "consectetur adipisicing elit. Voluptates, harum?"
+				},
+				{
+					"id": "3",
+					"checked": "unchecked",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+				},
+				{
+					"id": "4",
+					"checked": "unchecked",
+					"description": "Lorem, ipsum dolor."
+				},
+				{
+					"id": "5",
+					"checked": "checked",
+					"description": "Lorem, ipsum dolor adipisicing elit."
+				}
+			]
+		},
+		{
+			"id": "package03",
+			"featured": "false",
+			"name": "Package Name 3",
+			"subTitle": "Sub title 3",
+			"startingAtPrice": "$1,099",
+			"lines": [
+				{
+					"id": "0",
+					"checked": "checked",
+					"description": "Ipsum dolor sit a. Voluptates"
+				},
+				{
+					"id": "1",
+					"checked": "checked",
+					"description": "Lorem ipsum dolor sit amet"
+				},
+				{
+					"id": "2",
+					"checked": "checked",
+					"description": " adipisicing elit. Voluptates?"
+				},
+				{
+					"id": "3",
+					"checked": "unchecked",
+					"description": " dolor sit amet consectetur."
+				},
+				{
+					"id": "4",
+					"checked": "unchecked",
+					"description": "Lorem, ipsum dolor."
+				},
+				{
+					"id": "5",
+					"checked": "checked",
+					"description": "Dolor adipisicing elit."
+				}
+			]
+		}
+	]
+}

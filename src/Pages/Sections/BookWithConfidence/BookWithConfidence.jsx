@@ -22,7 +22,7 @@ const PhotoBooths = () => {
 			id='section-testimonial'
 			aria-label='section-testimonial'
 			data-bgcolor='#f8f8f8'>
-			<Typography variant='h4' color='secondary' p={'2rem'}>
+			<Typography variant='h4' color='secondary' p={'2rem'} textAlign={'center'} mb={'3rem'}>
 				Book With Confidence
 			</Typography>
 			<Container sx={{ backgroundColor: 'rgb(248, 248, 248)', backgroundSize: 'cover' }}>
@@ -34,7 +34,7 @@ const PhotoBooths = () => {
 					mousewheel
 					autoplay={{ delay: 2500, disableOnInteraction: false }}
 					pagination={{ clickable: true, dynamicBullets: true }}
-					onSlideChange={() => console.log('slide change')}
+					// onSlideChange={() => console.log('slide change')}
 					onSwiper={(swiper) => console.log(swiper)}>
 					<SwiperSlide>
 						<Paper className='de_testi opt-2'>
