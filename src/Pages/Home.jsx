@@ -20,11 +20,15 @@ import BackToTop from '../Components/BackToTop';
 const Home = () => {
 	return (
 		<>
-			<Container className='autoshow transparent' component='header' maxWidth={false}>
+			<Container className='autoshow transparent' component='header' maxWidth={'100vw'}>
 				<NavBar />
 			</Container>
-
-			<Box id='content' className='no-bottom no-top' display={'flex'} flexDirection={'column'}>
+			<Container
+				id='content'
+				className='no-bottom no-top'
+				display={'flex'}
+				flexDirection={'column'}
+				maxWidth={'100vw'}>
 				<div id='top'></div>
 				<Hero />
 				<BoothsPrintsBooks />
@@ -35,10 +39,10 @@ const Home = () => {
 				<PricingTableOrig />
 				<PricingTable />
 				<FunFacts />
-			</Box>
-			<Footer />
-			<BackToTop />
-			<Preloader />
+				<Footer />
+				<BackToTop />
+				<Preloader />
+			</Container>
 			{/* <Switcher /> */}
 		</>
 	);
