@@ -40,7 +40,9 @@ const PricingTableCard = ({ pkg, index }) => {
 						</Grid>
 					))}
 				</Grid>
-				<Button sx={{textAlign: 'center'}} variant='contained'>Book Now</Button>
+				<Button sx={{ textAlign: 'center' }} variant='contained'>
+					Book Now
+				</Button>
 			</Paper>
 		</Grid>
 	);

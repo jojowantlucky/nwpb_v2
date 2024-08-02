@@ -13,7 +13,7 @@ const PricingTable = () => {
 			alignItems={'center'}
 			component='section'>
 			{data.pkgs.map((pkg, index) => (
-				<PricingTableCard pkg={pkg} index={index} />
+				<PricingTableCard key={`pricing-table-card-${index}`} pkg={pkg} index={index} />
 			))}
 		</Grid>
 	);
