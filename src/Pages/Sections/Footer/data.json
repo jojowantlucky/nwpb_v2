@@ -1,0 +1,33 @@
+{
+	"footerLinks": [
+		{
+			"category": "Company",
+			"links": [
+				{ "label": "About Us", "url": "#" },
+				{ "label": "Team", "url": "#" },
+				{ "label": "Customers", "url": "#" },
+				{ "label": "Previous Events", "url": "#" }
+			]
+		},
+		{
+			"category": "Services",
+			"links": [
+				{ "label": "Web Design", "url": "#" },
+				{ "label": "Development", "url": "#" },
+				{ "label": "Animation", "url": "#" },
+				{ "label": "Mobile Apps", "url": "#" },
+				{ "label": "Campaign", "url": "#" }
+			]
+		},
+		{
+			"category": "Support",
+			"links": [
+				{ "label": "Login", "url": "#" },
+				{ "label": "Contact Us", "url": "#" },
+				{ "label": "Live Chat", "url": "#" },
+				{ "label": "Terms and Conditions", "url": "#" },
+				{ "label": "Privacy Policy", "url": "#" }
+			]
+		}
+	]
+}

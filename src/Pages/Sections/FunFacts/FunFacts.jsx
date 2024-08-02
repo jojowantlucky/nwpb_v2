@@ -6,7 +6,9 @@ const FunFacts = () => {
 		<Stack
 			direction='row'
 			id='section-fun-facts'
-			className='pt40 pb40 text-light'
+			className='text-light'
+			pt={40}
+			pb={40}
 			data-bgcolor='#404040'>
 			<div className='container'>
 				<Grid container spacing={1} direction={'row'} className='row sequence'>

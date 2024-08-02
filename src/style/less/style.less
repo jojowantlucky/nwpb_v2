@@ -6389,20 +6389,27 @@ footer .widget_recent_post li a {
 footer .widget h3 {
 	margin-bottom: 20px;
 }
-footer .widget_list li {
-	padding: 0 0 10px 0;
-	margin: 0;
-	margin-bottom: 10px;
-	background: none;
-	border-bottom-color: rgba(255, 255, 255, 0.1);
-}
-footer .widget_list li a {
-	color: #ccc;
-}
-footer .tiny-border span {
-	display: block;
-	height: 1px;
-	width: 30px;
+
+footer {
+	.widget_list {
+		li {
+			padding: 0 0 10px 0;
+			margin: 0;
+			margin-bottom: 10px;
+			background: none;
+			border-bottom-color: rgba(255, 255, 255, 0.1);
+			a {
+				color: #ccc;
+			}
+		}
+	}
+	.tiny-border {
+		span {
+			display: block;
+			height: 1px;
+			width: 30px;
+		}
+	}
 }
 
 .side-layout header {
