@@ -63,61 +63,6 @@ const Footer = () => {
 								</Box>
 							</Grid>
 						))}
-
-						{/* <Grid item xs={4}>
-							<Box>
-								<div className='widget'>
-									<Typography variant='h5'>Services</Typography>
-									<div className='tiny-border'>
-										<span></span>
-									</div>
-									<ul>
-										<li>
-											<a href='#'>Web Design</a>
-										</li>
-										<li>
-											<a href='#'>Development</a>
-										</li>
-										<li>
-											<a href='#'>Animation</a>
-										</li>
-										<li>
-											<a href='#'>Mobile Apps</a>
-										</li>
-										<li>
-											<a href='#'>Campaign</a>
-										</li>
-									</ul>
-								</div>
-							</Box>
-						</Grid>
-						<Grid item xs={4}>
-							<div>
-								<div className='widget'>
-									<Typography variant='h5'>Help &amp; Support</Typography>
-									<div className='tiny-border'>
-										<span></span>
-									</div>
-									<ul>
-										<li>
-											<a href='#'>Help Center</a>
-										</li>
-										<li>
-											<a href='#'>Contact Us</a>
-										</li>
-										<li>
-											<a href='#'>Live Chat</a>
-										</li>
-										<li>
-											<a href='#'>Terms of Services</a>
-										</li>
-										<li>
-											<a href='#'>Privacy Policy</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</Grid> */}
 					</Grid>
 				</Grid>
 			</Grid>

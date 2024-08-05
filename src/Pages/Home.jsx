@@ -36,7 +36,7 @@ const Home = () => {
 				<BookWithConfidence />
 				<TabSection />
 				<TabsORIG />
-				<PricingTableOrig />
+				{/* <PricingTableOrig /> */}
 				<PricingTable />
 				<FunFacts />
 				<Footer />

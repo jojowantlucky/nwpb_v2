@@ -1,12 +1,14 @@
 import { Box, Tabs, Tab, Typography, Container } from '@mui/material';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import CameraAltIcon from '@mui/icons-material/CameraAlt';
-import LooksOneIcon from '@mui/icons-material/LooksOne';
-import LooksTwoIcon from '@mui/icons-material/LooksTwo';
-import Looks3Icon from '@mui/icons-material/Looks3';
-import Looks4Icon from '@mui/icons-material/Looks4';
+import { FaPhotoVideo } from 'react-icons/fa';
+import { BiPhotoAlbum } from 'react-icons/bi';
+import { IoMdShare } from 'react-icons/io';
+import { HiOutlinePhoto } from 'react-icons/hi2';
+import data from './data.json';
+import backgroundImage from './tab-background.jpg';
+import { Parallax } from 'react-parallax';
+import { Transform } from '@mui/icons-material';
 
 /* 
 MAKE <TABS> NOT CENTERED ON SMALL DISPLAYS
@@ -42,60 +44,52 @@ const TabSection = () => {
 		setValue(newValue);
 	};
 
-	return (
-		<Box
-			alignItems='center'
-			width='80%'
-			m='auto'
-			minHeight={'40vh'}
-			display={'flex'}
-			justifyContent={'center'}
-			flexDirection={'column'}>
-			<Container sx={{ borderBottom: 1, borderColor: 'divider' }}>
-				<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
-					<Tab icon={<LooksOneIcon />} label='Prints' {...a11yProps(0)}></Tab>
-					<Tab icon={<LooksTwoIcon />} label='Backdrops' {...a11yProps(1)}></Tab>
-					<Tab icon={<Looks3Icon />} label='Photo Books' {...a11yProps(2)}></Tab>
-					<Tab icon={<Looks4Icon />} label='Social Sharing' {...a11yProps(3)}></Tab>
-				</Tabs>
-			</Container>
+	const icons = [
+		<FaPhotoVideo size={'2rem'} />,
+		<HiOutlinePhoto size={'2rem'} />,
+		<BiPhotoAlbum size={'2rem'} />,
+		<IoMdShare size={'2rem'} />,
+	];
 
-			<CustomTabPanel value={value} index={0} sx={{ width: '80%' }}>
-				<Typography variant='body1'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laborum consequuntur
-					mollitia dolorem odit, natus esse, nihil doloribus sit labore aspernatur adipisci
-					quibusdam magnam quae. Sed unde quod numquam illum!
-				</Typography>
-			</CustomTabPanel>
-			<CustomTabPanel value={value} index={1}>
-				<Typography variant='body1'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta quo autem dicta
-					facere expedita fugiat ipsum sequi ad eius quae ipsa accusantium eveniet natus ratione ex
-					quia iste amet voluptatum, consequatur hic obcaecati. Fugiat sapiente qui ducimus deserunt
-					magni fugit possimus aut?
-				</Typography>
-			</CustomTabPanel>
-			<CustomTabPanel value={value} index={2}>
-				<Typography variant='body1'>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, officiis adipisci eum
-					aut animi nesciunt omnis. Unde neque, voluptatem distinctio ipsam blanditiis facilis iste
-					vel cupiditate dolores pariatur eum, sed omnis quia. Doloribus at labore eaque odit
-					fugiat.
-				</Typography>
-			</CustomTabPanel>
-			<CustomTabPanel value={value} index={3}>
-				<Typography variant='body1'>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, officiis adipisci eum
-					aut animi nesciunt omnis. Unde neque, voluptatem distinctio ipsam blanditiis facilis iste
-					vel cupiditate dolores pariatur eum, sed omnis quia. Doloribus at labore eaque odit
-					fugiat. Lorem ipsum dolor sit amet consectetur{' '}
-				</Typography>
-				<Typography variant='body1'>
-					adipisicing elit. Amet nesciunt in dolorum est molestias autem rerum temporibus cumque. Ea
-					odio aperiam hic aliquid harum, a deleniti animi consequatur vel eveniet!
-				</Typography>
-			</CustomTabPanel>
-		</Box>
+	return (
+		<Parallax
+			blur={4}
+			bgImage={backgroundImage}
+			bgImageAlt={data.image.alt}
+			bgClassName='schooch-up'>
+			<Box
+				alignItems='center'
+				width='60%'
+				m='auto'
+				minHeight={'70vh'}
+				display={'flex'}
+				justifyContent={'center'}
+				flexDirection={'column'}>
+				<Container>
+					<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
+						{data.tabs.map((item, index) => (
+							<Tab
+								sx={{
+									backgroundColor: 'rgba(200,200,200, .3)',
+									borderRadius: '4px',
+									marginBottom: '1rem',
+									marginLeft: '1rem',
+									marginRight: '1rem',
+								}}
+								icon={icons[index]}
+								label={item.label}
+								{...a11yProps(index)}></Tab>
+						))}
+					</Tabs>
+				</Container>
+
+				{data.tabs.map((item, index) => (
+					<CustomTabPanel value={value} index={index} sx={{ width: '80%' }}>
+						<Typography variant='body1'>{item.tabPanel}</Typography>
+					</CustomTabPanel>
+				))}
+			</Box>
+		</Parallax>
 	);
 };
 

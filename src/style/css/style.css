@@ -4580,6 +4580,10 @@ body #homepage {
 .logo {
   filter: drop-shadow(0 0 0.5rem #bdbdbd);
 }
+.schooch-up {
+  position: relative;
+  top: -200px;
+}
 a {
   transition: 0.3s;
   text-decoration: none;
