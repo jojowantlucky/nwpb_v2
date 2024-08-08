@@ -1,4 +1,4 @@
-import { Box, Tabs, Tab, Typography, Container } from '@mui/material';
+import { Box, Tabs, Tab, Typography, Grid } from '@mui/material';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaPhotoVideo } from 'react-icons/fa';
@@ -13,6 +13,14 @@ import { Transform } from '@mui/icons-material';
 /* 
 MAKE <TABS> NOT CENTERED ON SMALL DISPLAYS
 */
+
+const IconCaretDown = (props) => {
+	return (
+		<svg viewBox='0 0 320 512' fill='currentColor' height='1em' width='1em' {...props}>
+			<path d='M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301 191.9 288 191.9L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z' />
+		</svg>
+	);
+};
 
 const TabSection = () => {
 	const CustomTabPanel = (props) => {
@@ -53,41 +61,46 @@ const TabSection = () => {
 
 	return (
 		<Parallax
-			blur={4}
+			blur={1}
 			bgImage={backgroundImage}
 			bgImageAlt={data.image.alt}
-			bgClassName='schooch-up'>
-			<Box
-				alignItems='center'
-				width='60%'
-				m='auto'
-				minHeight={'70vh'}
-				display={'flex'}
-				justifyContent={'center'}
-				flexDirection={'column'}>
-				<Container>
-					<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
+			bgClassName='schooch-up'
+			strength={200}>
+			<Box alignItems='center' width='60%' m='auto' minHeight={'70vh'} mt={'6rem'}>
+				<Grid container spacing={2} direction={'column'} mt={'2rem'}>
+					<Grid xs={12} item centered>
+						<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
+							{data.tabs.map((item, index) => (
+								<Tab
+									sx={{
+										backgroundColor: 'rgba(200,200,200, .5)',
+										borderRadius: '4px',
+										marginBottom: '1rem',
+										marginLeft: '1rem',
+										marginRight: '1rem',
+										minWidth: '8rem',
+										minHeight: '8rem',
+									}}
+									className='wow fadeInRight'
+									data-wow-delay={`${index * 0.4}s`}
+									icon={icons[index]}
+									label={item.label}
+									{...a11yProps(index)}
+									wrapped
+								/>
+							))}
+						</Tabs>
+					</Grid>
+					<Grid item xs={12}>
 						{data.tabs.map((item, index) => (
-							<Tab
-								sx={{
-									backgroundColor: 'rgba(200,200,200, .3)',
-									borderRadius: '4px',
-									marginBottom: '1rem',
-									marginLeft: '1rem',
-									marginRight: '1rem',
-								}}
-								icon={icons[index]}
-								label={item.label}
-								{...a11yProps(index)}></Tab>
+							<CustomTabPanel value={value} index={index} sx={{ width: '80%' }}>
+								<Typography color='grey.200' variant='body1'>
+									{item.tabPanel}
+								</Typography>
+							</CustomTabPanel>
 						))}
-					</Tabs>
-				</Container>
-
-				{data.tabs.map((item, index) => (
-					<CustomTabPanel value={value} index={index} sx={{ width: '80%' }}>
-						<Typography variant='body1'>{item.tabPanel}</Typography>
-					</CustomTabPanel>
-				))}
+					</Grid>
+				</Grid>
 			</Box>
 		</Parallax>
 	);
