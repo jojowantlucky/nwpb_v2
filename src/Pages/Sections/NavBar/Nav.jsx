@@ -4,7 +4,7 @@ import { Grid, Typography } from '@mui/material';
 
 const Nav = () => {
 	return (
-		<Grid container justifyContent={'space-between'}>
+		<Grid container direction='row' justifyContent={'space-between'}>
 			<Grid item>
 				<span id='menu-btn'></span>
 			</Grid>
@@ -17,7 +17,7 @@ const Nav = () => {
 					justifyContent={'flex-end'}
 					alignItems={'center'}>
 					{data.items.map((item) => (
-						<Grid item alignSelf={'center'}>
+						<Grid item>
 							<Typography variant='subheader1' color={'grey.200'}>
 								{item.label}
 							</Typography>
