@@ -73,13 +73,14 @@ const TabSection = () => {
 							{data.tabs.map((item, index) => (
 								<Tab
 									sx={{
-										backgroundColor: 'rgba(200,200,200, .5)',
+										backgroundColor: 'rgba(200,200,200, .35)',
 										borderRadius: '4px',
 										marginBottom: '1rem',
 										marginLeft: '1rem',
 										marginRight: '1rem',
 										minWidth: '8rem',
 										minHeight: '8rem',
+										color: 'grey.300',
 									}}
 									className='wow fadeInRight'
 									data-wow-delay={`${index * 0.4}s`}
@@ -94,7 +95,7 @@ const TabSection = () => {
 					<Grid item xs={12}>
 						{data.tabs.map((item, index) => (
 							<CustomTabPanel value={value} index={index} sx={{ width: '80%' }}>
-								<Typography color='grey.200' variant='body1'>
+								<Typography color='grey.300' variant='body1'>
 									{item.tabPanel}
 								</Typography>
 							</CustomTabPanel>

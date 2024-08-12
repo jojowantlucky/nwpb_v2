@@ -80,7 +80,7 @@
 		},
 		{
 			"id": "package03",
-			"featured": "false",
+			"featured": "true",
 			"name": "Package Name 3",
 			"subTitle": "Sub title 3",
 			"startingAtPrice": "$1,099",
@@ -88,7 +88,7 @@
 				{
 					"id": "0",
 					"checked": "checked",
-					"description": "Ipsum dolor sit a. Voluptates"
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, harum"
 				},
 				{
 					"id": "1",
@@ -98,12 +98,12 @@
 				{
 					"id": "2",
 					"checked": "checked",
-					"description": " adipisicing elit. Voluptates?"
+					"description": "consectetur adipisicing elit. Voluptates, harum?"
 				},
 				{
 					"id": "3",
 					"checked": "unchecked",
-					"description": " dolor sit amet consectetur."
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 				},
 				{
 					"id": "4",
@@ -113,7 +113,7 @@
 				{
 					"id": "5",
 					"checked": "checked",
-					"description": "Dolor adipisicing elit. "
+					"description": "Lorem, ipsum dolor adipisicing elit."
 				}
 			]
 		}

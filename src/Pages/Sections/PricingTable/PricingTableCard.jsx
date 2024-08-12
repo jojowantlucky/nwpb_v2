@@ -39,10 +39,13 @@ const PricingTableCard = ({ pkg, index }) => {
 							</Stack>
 						</Grid>
 					))}
+
+					<Grid item m='auto' mt='1rem'>
+						<Button sx={{ margin: 'auto', textAlign: 'center' }} variant='contained'>
+							Book Now
+						</Button>
+					</Grid>
 				</Grid>
-				<Button sx={{ textAlign: 'center' }} variant='contained'>
-					Book Now
-				</Button>
 			</Paper>
 		</Grid>
 	);

@@ -1,0 +1,11 @@
+{
+	"items": [
+		{ "label": "Home", "url": "#home" },
+		{ "label": "Photo Booths", "url": "#photobooths" },
+		{ "label": "Prints", "url": "#prints" },
+		{ "label": "Photo Books", "url": "#photobooks" },
+		{ "label": "Options", "url": "#options" },
+		{ "label": "Contact", "url": "#contactus" },
+		{ "label": "Login", "url": "https://noteworthy-djs.checkcherry.com/users/sign_in" }
+	]
+}
