@@ -1,22 +1,26 @@
 {
-	"footerLinks": [
+	"copy": {
+		"title": "About Noteworthy Photo Booths",
+		"body": "Noteworthy Photo Booths combines state of the art equipment, super fun props, prints, and engaging hosts to add a whole extra layer of awesome to any event. We have several types of booths available and packages to fit any budget.",
+		"copyright": "&copy; Copyright 2024 - Noteworthy Productions, LLC"
+	},
+	"links": [
 		{
 			"category": "Company",
 			"links": [
 				{ "label": "About Us", "url": "#" },
 				{ "label": "Team", "url": "#" },
-				{ "label": "Customers", "url": "#" },
+				{ "label": "Clients", "url": "#" },
 				{ "label": "Previous Events", "url": "#" }
 			]
 		},
 		{
 			"category": "Services",
 			"links": [
-				{ "label": "Web Design", "url": "#" },
-				{ "label": "Development", "url": "#" },
-				{ "label": "Animation", "url": "#" },
-				{ "label": "Mobile Apps", "url": "#" },
-				{ "label": "Campaign", "url": "#" }
+				{ "label": "Photo Booth", "url": "#" },
+				{ "label": "Custom Prints", "url": "#" },
+				{ "label": "Photo Books", "url": "#" },
+				{ "label": "Online Planning", "url": "#" }
 			]
 		},
 		{
@@ -24,7 +28,6 @@
 			"links": [
 				{ "label": "Login", "url": "#" },
 				{ "label": "Contact Us", "url": "#" },
-				{ "label": "Live Chat", "url": "#" },
 				{ "label": "Terms and Conditions", "url": "#" },
 				{ "label": "Privacy Policy", "url": "#" }
 			]

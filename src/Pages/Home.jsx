@@ -23,20 +23,13 @@ const Home = () => {
 			<Container className='autoshow transparent' component='header' maxWidth={'100vw'}>
 				<NavBar />
 			</Container>
-			<Container
-				id='content'
-				className='no-bottom no-top'
-				display={'flex'}
-				flexDirection={'column'}
-				maxWidth={'100vw'}>
+			<Container id='content' className='no-bottom no-top' display={'flex'} maxWidth={'100vw'}>
 				<div id='top'></div>
 				<Hero />
 				<BoothsPrintsBooks />
 				<Gallery />
 				<BookWithConfidence />
 				<TabSection />
-				<TabsORIG />
-				{/* <PricingTableOrig /> */}
 				<PricingTable />
 				<FunFacts />
 				<Footer />

@@ -7,10 +7,9 @@ const FunFacts = () => {
 		<Stack direction='row' id='section-fun-facts' pt={6} pb={10} data-bgcolor='#404040'>
 			<div className='container'>
 				<Grid container spacing={1} direction={'row'} className='row sequence'>
-					{data.items.map((item) => (
-						<Grid item xs={6} md={3} className='sq-item wow'>
-							<Stack
-								sx={{ textAlign: 'center', padding: '20px 0 20px 0', background: 'none' }}>
+					{data.items.map((item, index) => (
+						<Grid key={index} item xs={6} md={3} className='sq-item wow'>
+							<Stack sx={{ textAlign: 'center', padding: '20px 0 20px 0', background: 'none' }}>
 								<Typography
 									variant='h3'
 									className='timer'

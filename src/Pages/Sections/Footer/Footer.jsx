@@ -14,21 +14,17 @@ const Footer = () => {
 				maxWidth={'80vw'}>
 				<Grid item xs={4}>
 					<div className='widget'>
-						<Typography variant='h5'>About Noteworthy Photo Booths</Typography>
+						<Typography variant='h5'>{data.copy.title}</Typography>
 						<Box className='tiny-border'>
 							<Box component='span'></Box>
 						</Box>
-						<Typography variant='body'>
-							Noteworthy Photo Booths combines state of the art equipment, super fun props, prints,
-							and engaging hosts to add a whole extra layer of awesome to any event. We have several
-							types of booths available and packages to fit any budget.
-						</Typography>
+						<Typography variant='body'>{data.copy.body}</Typography>
 					</div>
 				</Grid>
 				<Grid item xs={6}>
-					<Grid container spacing={2} disableGutters>
-						{data.footerLinks.map((item) => (
-							<Grid item xs={4}>
+					<Grid container spacing={2}>
+						{data.links.map((item, index) => (
+							<Grid key={index} item xs={4}>
 								<Box
 									sx={{ border: 'none', marginBottom: '0', paddingBottom: '30px' }}
 									className='widget'>
@@ -52,8 +48,8 @@ const Footer = () => {
 											}}></Box>
 									</Box>
 									<ul>
-										{item.links.map((item) => (
-											<li>
+										{item.links.map((item, index) => (
+											<li key={index}>
 												<Link underline='hover' variant='subtitle1' color='primary' href={item.url}>
 													{item.label}
 												</Link>
@@ -69,7 +65,7 @@ const Footer = () => {
 
 			<Box className='subfooter'>
 				<Typography textAlign={'center'} variant='subtitle2' md={12}>
-					&copy; Copyright 2024 - Noteworthy Productions, LLC
+					{data.copy.copyright}
 				</Typography>
 			</Box>
 		</Box>

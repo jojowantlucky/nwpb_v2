@@ -50,6 +50,7 @@ const TabSection = () => {
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
+		console.log('value: ', newValue);
 	};
 
 	const icons = [
@@ -68,10 +69,11 @@ const TabSection = () => {
 			strength={200}>
 			<Box alignItems='center' width='60%' m='auto' minHeight={'70vh'} mt={'6rem'}>
 				<Grid container spacing={2} direction={'column'} mt={'2rem'}>
-					<Grid xs={12} item centered>
+					<Grid xs={12} item>
 						<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
 							{data.tabs.map((item, index) => (
 								<Tab
+									key={index}
 									sx={{
 										backgroundColor: 'rgba(200,200,200, .35)',
 										borderRadius: '4px',
@@ -94,7 +96,7 @@ const TabSection = () => {
 					</Grid>
 					<Grid item xs={12}>
 						{data.tabs.map((item, index) => (
-							<CustomTabPanel value={value} index={index} sx={{ width: '80%' }}>
+							<CustomTabPanel value={value} index={index} key={index} sx={{ width: '80%' }}>
 								<Typography color='grey.300' variant='body1'>
 									{item.tabPanel}
 								</Typography>
