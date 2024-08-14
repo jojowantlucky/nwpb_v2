@@ -50,7 +50,6 @@ const TabSection = () => {
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
-		console.log('value: ', newValue);
 	};
 
 	const icons = [
