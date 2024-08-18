@@ -26,15 +26,15 @@ const Home = () => {
 			<Container id='content' className='no-bottom no-top' display={'flex'} maxWidth={'100vw'}>
 				<div id='top'></div>
 				<Hero />
-				<BoothsPrintsBooks />
-				<Gallery />
-				<BookWithConfidence />
-				<TabSection />
-				<PricingTable />
-				<FunFacts />
-				<Footer />
-				<BackToTop />
-				<Preloader />
+				{/* <BoothsPrintsBooks /> */}
+				{/* <Gallery /> */}
+				{/* <BookWithConfidence /> */}
+				{/* <TabSection /> */}
+				{/* <PricingTable /> */}
+				{/* <FunFacts />/ */}
+				{/* <Footer /> */}
+				{/* <BackToTop /> */}
+				{/* <Preloader /> */}
 			</Container>
 			{/* <Switcher /> */}
 		</>
