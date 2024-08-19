@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 
 import '../style/css/style.css';
 import Hero from './Sections/Hero/Hero';
@@ -19,14 +19,16 @@ import BackToTop from '../Components/BackToTop';
 
 const Home = () => {
 	return (
-		<>
-			<Container className='autoshow transparent' component='header' maxWidth={'100vw'}>
+		<Container
+			maxWidth={'100vw'}
+			sx={{ paddingLeft: '0 !important', paddingRight: '0 !important' }}>
+			<Grid container className='autoshow transparent' component='header' maxWidth={'100vw'}>
 				<NavBar />
-			</Container>
-			<Container id='content' className='no-bottom no-top' display={'flex'} maxWidth={'100vw'}>
+			</Grid>
+			<Grid container id='content' className='no-bottom no-top' display={'flex'} maxWidth={'100vw'}>
 				<div id='top'></div>
 				<Hero />
-				{/* <BoothsPrintsBooks /> */}
+				<BoothsPrintsBooks />
 				{/* <Gallery /> */}
 				{/* <BookWithConfidence /> */}
 				{/* <TabSection /> */}
@@ -35,9 +37,9 @@ const Home = () => {
 				{/* <Footer /> */}
 				{/* <BackToTop /> */}
 				{/* <Preloader /> */}
-			</Container>
+			</Grid>
 			{/* <Switcher /> */}
-		</>
+		</Container>
 	);
 };
 
