@@ -19,7 +19,7 @@ const CTAs = () => {
 						className='pulse'
 						color='primary'
 						sx={{
-							backgroundColor: 'buttonBackgrounds.main',
+							backgroundColor: 'background.button.main',
 							borderRadius: '50%',
 							padding: '2rem',
 							boxShadow: '10',
@@ -32,7 +32,7 @@ const CTAs = () => {
 						className='pulse'
 						color='primary'
 						sx={{
-							backgroundColor: 'buttonBackgrounds.secondary',
+							backgroundColor: 'background.button.secondary',
 							padding: '2rem',
 							boxShadow: '10',
 						}}>

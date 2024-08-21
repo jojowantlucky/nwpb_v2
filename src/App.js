@@ -7,10 +7,11 @@ function App() {
 		palette: {
 			background: {
 				default: '#555',
-			},
-			buttonBackgrounds: {
-				main: 'rgba(252, 193, 223, 0.55)',
-				secondary: 'rgba(193, 242, 252, 0.5)',
+				button: {
+					main: 'rgba(252, 193, 223, 0.55)',
+					secondary: 'rgba(193, 242, 252, 0.5)',
+				},
+				menu: '#555',
 			},
 		},
 	});
