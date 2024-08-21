@@ -18,18 +18,25 @@ const CTAs = () => {
 					<IconButton
 						className='pulse'
 						color='primary'
-						size='large'
-						sx={{ backgroundColor: 'primary' }}>
-						<CallRoundedIcon />
+						sx={{
+							backgroundColor: 'buttonBackgrounds.main',
+							borderRadius: '50%',
+							padding: '2rem',
+							boxShadow: '10',
+						}}>
+						<CallRoundedIcon sx={{ fontSize: '6rem' }} />
 					</IconButton>
 				</Grid>
 				<Grid item>
 					<IconButton
 						className='pulse'
-						color='secondary'
-						size='large'
-						sx={{ backgroundColor: 'primary' }}>
-						<RequestQuoteRoundedIcon />
+						color='primary'
+						sx={{
+							backgroundColor: 'buttonBackgrounds.secondary',
+							padding: '2rem',
+							boxShadow: '10',
+						}}>
+						<RequestQuoteRoundedIcon sx={{ fontSize: '6rem' }} />
 					</IconButton>
 				</Grid>
 			</Grid>
