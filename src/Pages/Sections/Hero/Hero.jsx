@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react';
-import { Grid } from '@mui/material';
+import React from 'react';
+import { Grid, Box } from '@mui/material';
 import Logo from './Logo';
 import Title from './Title';
 import Video from './Video';
@@ -7,11 +7,12 @@ import CTAs from './CTAs';
 
 const Hero = () => {
 	return (
-		<section
+		<Box
+			component='section'
 			id='hero'
-			className='full-height no-padding text-light'
 			data-speed='5'
-			data-type='background'>
+			data-type='background'
+			sx={{ padding: '0 !important', overflow: 'hidden' }}>
 			<div className='de-video-container'>
 				<div className='de-video-content'>
 					<Grid
@@ -30,7 +31,7 @@ const Hero = () => {
 
 				<Video />
 			</div>
-		</section>
+		</Box>
 	);
 };
 

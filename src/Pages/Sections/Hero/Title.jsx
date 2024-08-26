@@ -6,7 +6,7 @@ const Title = () => {
 		<Grid item xs={12} className='mask'>
 			<Typography
 				variant='h2'
-				color={'primary'}
+				color={'grey.400'}
 				fontWeight={'light'}
 				fontFamily={'Dosis'}
 				letterSpacing='3rem'
