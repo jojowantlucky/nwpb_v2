@@ -60,51 +60,53 @@ const TabSection = () => {
 	];
 
 	return (
-		<Parallax
-			blur={1}
-			bgImage={backgroundImage}
-			bgImageAlt={data.image.alt}
-			bgClassName='schooch-up'
-			strength={200}>
-			<Box alignItems='center' width='60%' m='auto' minHeight={'70vh'} mt={'6rem'}>
-				<Grid container spacing={2} direction={'column'} mt={'2rem'}>
-					<Grid xs={12} item>
-						<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
+		<Grid item minWidth={'100vw'}>
+			<Parallax
+				blur={1}
+				bgImage={backgroundImage}
+				bgImageAlt={data.image.alt}
+				bgClassName='schooch-up'
+				strength={200}>
+				<Box alignItems='center' width='60%' m='auto' minHeight={'70vh'} mt={'6rem'}>
+					<Grid container spacing={2} direction={'column'} mt={'2rem'}>
+						<Grid xs={12} item>
+							<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
+								{data.tabs.map((item, index) => (
+									<Tab
+										key={index}
+										sx={{
+											backgroundColor: 'rgba(200,200,200, .35)',
+											borderRadius: '4px',
+											marginBottom: '1rem',
+											marginLeft: '1rem',
+											marginRight: '1rem',
+											minWidth: '8rem',
+											minHeight: '8rem',
+											color: 'grey.300',
+										}}
+										className='wow fadeInRight'
+										data-wow-delay={`${index * 0.4}s`}
+										icon={icons[index]}
+										label={item.label}
+										{...a11yProps(index)}
+										wrapped
+									/>
+								))}
+							</Tabs>
+						</Grid>
+						<Grid item xs={12}>
 							{data.tabs.map((item, index) => (
-								<Tab
-									key={index}
-									sx={{
-										backgroundColor: 'rgba(200,200,200, .35)',
-										borderRadius: '4px',
-										marginBottom: '1rem',
-										marginLeft: '1rem',
-										marginRight: '1rem',
-										minWidth: '8rem',
-										minHeight: '8rem',
-										color: 'grey.300',
-									}}
-									className='wow fadeInRight'
-									data-wow-delay={`${index * 0.4}s`}
-									icon={icons[index]}
-									label={item.label}
-									{...a11yProps(index)}
-									wrapped
-								/>
+								<CustomTabPanel value={value} index={index} key={index} sx={{ width: '80%' }}>
+									<Typography color='grey.300' variant='body1'>
+										{item.tabPanel}
+									</Typography>
+								</CustomTabPanel>
 							))}
-						</Tabs>
+						</Grid>
 					</Grid>
-					<Grid item xs={12}>
-						{data.tabs.map((item, index) => (
-							<CustomTabPanel value={value} index={index} key={index} sx={{ width: '80%' }}>
-								<Typography color='grey.300' variant='body1'>
-									{item.tabPanel}
-								</Typography>
-							</CustomTabPanel>
-						))}
-					</Grid>
-				</Grid>
-			</Box>
-		</Parallax>
+				</Box>
+			</Parallax>
+		</Grid>
 	);
 };
 

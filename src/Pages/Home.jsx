@@ -35,9 +35,9 @@ const Home = () => {
 				<div id='top'></div>
 				<Hero />
 				<BoothsPrintsBooks />
-				{/* <Gallery /> */}
-				{/* <BookWithConfidence /> */}
-				{/* <TabSection /> */}
+				<Gallery />
+				<BookWithConfidence />
+				<TabSection />
 				{/* <PricingTable /> */}
 				{/* <FunFacts />/ */}
 				{/* <Footer /> */}

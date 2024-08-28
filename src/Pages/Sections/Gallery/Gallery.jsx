@@ -12,7 +12,8 @@ const Gallery = () => {
 	return (
 		<Grid
 			component='section'
-			sx={{ backgroundSize: 'cover', backgroundColor: 'rgb(248,248,248' }}
+			item
+			sx={{ width: '100vw', backgroundColor: 'rgb(248,248,248' }}
 			id='section-gallery'
 			p={0}
 			m={0}

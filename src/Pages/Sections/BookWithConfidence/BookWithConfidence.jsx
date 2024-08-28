@@ -25,7 +25,8 @@ const PhotoBooths = () => {
 			<Typography variant='h4' color='secondary' p={'2rem'} textAlign={'center'} mb={'3rem'}>
 				Book With Confidence
 			</Typography>
-			<Container sx={{ backgroundColor: 'rgb(248, 248, 248)', backgroundSize: 'cover' }}>
+			<Container
+				sx={{ backgroundColor: 'rgb(248, 248, 248)', minWidth: '100vw', backgroundSize: 'cover' }}>
 				<Swiper
 					spaceBetween={50}
 					slidesPerView={3}
