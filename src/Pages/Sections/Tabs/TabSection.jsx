@@ -67,8 +67,14 @@ const TabSection = () => {
 				bgImageAlt={data.image.alt}
 				bgClassName='schooch-up'
 				strength={200}>
-				<Box alignItems='center' width='60%' m='auto' minHeight={'70vh'} mt={'6rem'}>
-					<Grid container spacing={2} direction={'column'} mt={'2rem'}>
+				<Box width='60%' m='auto' minHeight={'70vh'} mt={'6rem'}>
+					<Grid
+						container
+						display={'flex'}
+						spacing={2}
+						alignItems={'center'}
+						direction={'column'}
+						mt={'4rem'}>
 						<Grid xs={12} item>
 							<Tabs centered value={value} onChange={handleChange} aria-label='tabs'>
 								{data.tabs.map((item, index) => (
