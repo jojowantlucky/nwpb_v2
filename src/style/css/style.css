@@ -9142,7 +9142,6 @@ object {
   position: absolute;
   width: 100%;
   min-height: 100%;
-  background: rgba(20, 20, 20, 0.25);
   background-size: cover;
 }
 .video-fixed {

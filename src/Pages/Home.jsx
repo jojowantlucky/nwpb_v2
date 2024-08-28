@@ -25,7 +25,13 @@ const Home = () => {
 			<Grid container className='autoshow transparent' component='header' maxWidth={'100vw'}>
 				<NavBar />
 			</Grid>
-			<Grid container id='content' className='no-bottom no-top' display={'flex'} maxWidth={'100vw'}>
+			<Grid
+				container
+				id='content'
+				sx={{ marginTop: '0', marginBottom: '0', paddingTop: '0 !important', paddingBottom: '0' }}
+				className=''
+				display={'flex'}
+				maxWidth={'100vw'}>
 				<div id='top'></div>
 				<Hero />
 				<BoothsPrintsBooks />

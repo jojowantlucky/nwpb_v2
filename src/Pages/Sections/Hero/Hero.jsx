@@ -13,8 +13,8 @@ const Hero = () => {
 			data-speed='5'
 			data-type='background'
 			sx={{ padding: '0 !important', overflow: 'hidden' }}>
-			<div className='de-video-container'>
-				<div className='de-video-content'>
+			<Box>
+				<Box sx={{ width: '100%', position: 'absolute', zIndex: '10', marginTop: '0 !important' }}>
 					<Grid
 						container
 						direction='column'
@@ -27,10 +27,10 @@ const Hero = () => {
 						<Title />
 						<CTAs />
 					</Grid>
-				</div>
+				</Box>
 
 				<Video />
-			</div>
+			</Box>
 		</Box>
 	);
 };
