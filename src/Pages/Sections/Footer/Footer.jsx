@@ -4,7 +4,7 @@ import data from './data.json';
 
 const Footer = () => {
 	return (
-		<Box component='footer'>
+		<Box component='footer' width={'100vw'}>
 			<Grid
 				container
 				direction='row'

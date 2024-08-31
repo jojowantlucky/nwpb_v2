@@ -38,9 +38,9 @@ const Home = () => {
 				<Gallery />
 				<BookWithConfidence />
 				<TabSection />
-				{/* <PricingTable /> */}
-				{/* <FunFacts />/ */}
-				{/* <Footer /> */}
+				<PricingTable />
+				<FunFacts />
+				<Footer />
 				{/* <BackToTop /> */}
 				{/* <Preloader /> */}
 			</Grid>
