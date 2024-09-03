@@ -16,6 +16,7 @@ import Footer from './Sections/Footer/Footer';
 // import Switcher from '../Components/Switcher';
 import Preloader from '../Components/Preloader';
 import BackToTop from '../Components/BackToTop';
+import PackagePricingTable from './Sections/PackagePricingTable/PackagePricingTable';
 
 const Home = () => {
 	return (
@@ -39,6 +40,7 @@ const Home = () => {
 				<BookWithConfidence />
 				<TabSection />
 				<PricingTable />
+				<PackagePricingTable />
 				<FunFacts />
 				<Footer />
 				{/* <BackToTop /> */}

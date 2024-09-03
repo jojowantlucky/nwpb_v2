@@ -1,0 +1,84 @@
+{
+	"upgrades": [
+		{
+			"id": "upgrade00",
+			"name": "Photo Booth Host",
+			"description": "Photo Booth Hosts really help bring out the fun and keep things moving quickly. The photo booth host would deliver, setup, and breakdown all photo booth equipment.",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
+			"price": "$150",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade01",
+			"name": "Unlimited Prints",
+			"description": "Upgrade your package from 2 instant prints per session to unlimited prints per session. This upgrade applies only to packages with instant prints.",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/unlimited-prints.webp",
+			"price": "99",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade02",
+			"name": "Green Screen",
+			"description": "Upgrade your package from 2 instant prints per session to unlimited prints per session. This upgrade applies only to packages with instant prints.",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/green-screen.webp",
+			"price": "99",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade03",
+			"name": "Props",
+			"description": "Upgrade your package from 2 instant prints per session to unlimited prints per session. This upgrade applies only to packages with instant prints.",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/props.webp",
+			"price": "49",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade04",
+			"name": "Instant 2x6\" Prints",
+			"description": "Add two 2x6\" prints to your package",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
+			"price": "99",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade05",
+			"name": "Photo Book",
+			"description": "Choose from any of our standard photo books.",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/standard-photo-books.webp",
+			"price": "79",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade06",
+			"name": "Custom Photo Book",
+			"description": "Customize your photo book!",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
+			"price": "99",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade07",
+			"name": "Extra Photo Book Pages",
+			"description": "10 additional sheets",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
+			"price": "19",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade08",
+			"name": "Instant 4x6\" Prints",
+			"description": "Choose from any of our 4x6\" print designs or use your own. This upgrade includes two prints per session.",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
+			"price": "149",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade09",
+			"name": "Extra Hour",
+			"description": "Add more time to any of our packages. ",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
+			"price": "149",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		}
+	]
+}

@@ -3,39 +3,45 @@
 		{
 			"id": "package01",
 			"featured": "false",
-			"name": "Package Name 1",
-			"subTitle": "Sub title 1",
-			"startingAtPrice": "$899",
+			"name": "Social Booth",
+			"subTitle": "3 Hours of Service",
+			"startingAtPrice": "$699",
 			"lines": [
 				{
 					"id": "0",
-					"checked": "unchecked",
-					"description": "Lorem ipsum dolor sit "
+					"checked": "checked",
+					"description": "3 Hours of Unlimited Use"
 				},
 				{
 					"id": "1",
 					"checked": "checked",
-					"description": "Lorem ipsum dolor sit amet"
+					"description": "Delivery, Setup, & Pickup"
 				},
 				{
 					"id": "2",
 					"checked": "checked",
-					"description": "consectetur adipisicing elit. Voluptates, harum?"
+					"description": "Digital Prints"
 				},
 				{
 					"id": "3",
-					"checked": "unchecked",
-					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+					"checked": "checked",
+					"description": "Custom Print Design"
 				},
-				{
-					"id": "4",
-					"checked": "unchecked",
-					"description": "Lorem, ipsum dolor."
-				},
+				{ "id": "4", "checked": "checked", "description": "Props" },
 				{
 					"id": "5",
-					"checked": "checked",
-					"description": "Lorem, ipsum dolor adipisicing elit."
+					"checked": "addon",
+					"description": "Photo Booth Host"
+				},
+				{
+					"id": "6",
+					"checked": "addon",
+					"description": "Instant Prints"
+				},
+				{
+					"id": "7",
+					"checked": "addon",
+					"description": "Additional Time"
 				}
 			]
 		},
