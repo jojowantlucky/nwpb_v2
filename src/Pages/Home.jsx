@@ -39,7 +39,7 @@ const Home = () => {
 				<Gallery />
 				<BookWithConfidence />
 				<TabSection />
-				<PricingTable />
+				{/* <PricingTable /> */}
 				<PackagePricingTable />
 				<FunFacts />
 				<Footer />

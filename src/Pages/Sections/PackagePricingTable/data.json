@@ -1,84 +1,102 @@
-{
-	"columns": [
+{ "pageCopy" : {
+	"title": "Photo Booth Packages"
+},
+	"tableRows": [
 		{
-			"id": "column0",
-			"featured": "false",
-			"title": "Choose A Package",
-			"price": "Price",
-			"time": "Included Time",
-			"deliverySetupPickup": "Delivery, Setup, & Pickup",
-			"digitalPrints": "DigitalPrints",
-			"customPrintDesign": "Custom Print Design",
-			"props": "Props",
-			"dslr": "DSLR Camera",
-			"photoBoothHost": "Photo Booth Host",
-			"instantPrints": "Instant Prints",
-			"additionalHours": "Additional Hours",
-			"includedMileage": "Included Mileage"
+			"id": "row00",
+			"label": "",
+			"socialBooth": "Social Booth",
+			"openAir": "Open-Air Booth",
+			"enclosed": "Enclosed Booth",
+			"threesixty": "360 Booth"
 		},
 		{
-			"id": "column1",
-			"featured": "false",
-			"title": "Social Booth",
-			"price": "$699",
-			"time": "3 Hours Included",
-			"deliverySetupPickup": "included",
-			"digitalPrints": "not-included",
-			"customPrintDesign": "included",
-			"props": "not-included",
-			"dslr": "included",
-			"photoBoothHost": "not-included",
-			"instantPrints": "not-included",
-			"additionalHours": "$100",
-			"includedMileage": "Free Within 50 Miles"
+			"id": "row01",
+			"label": "Price",
+			"socialBooth": "$699",
+			"openAir": "$899",
+			"enclosed": "$899",
+			"threesixty": "$999"
 		},
 		{
-			"id": "column2",
-			"featured": "false",
-			"title": "Open-Air Booth",
-			"price": "$899",
-			"time": "3 Hours Included",
-			"deliverySetupPickup": "included",
-			"digitalPrints": "included",
-			"customPrintDesign": "included",
-			"props": "included",
-			"dslr": "included",
-			"photoBoothHost": "included",
-			"instantPrints": "included",
-			"additionalHours": "$150",
-			"includedMileage": "Free Within 50 Miles"
+			"id": "row02",
+			"label": "Included Time",
+			"socialBooth": "3 Hours",
+			"openAir": "3 Hours",
+			"enclosed": "3 Hours",
+			"threesixty": "3 Hours"
 		},
 		{
-			"id": "column3",
-			"featured": "false",
-			"title": "Enclosed Booth",
-			"price": "$899",
-			"time": "3 Hours Included",
-			"deliverySetupPickup": "included",
-			"digitalPrints": "included",
-			"customPrintDesign": "included",
-			"props": "included",
-			"dslr": "included",
-			"photoBoothHost": "included",
-			"instantPrints": "included",
-			"additionalHours": "$150",
-			"includedMileage": "Free Within 50 Miles"
+			"id": "row03",
+			"label": "Delivery, Setup, & Pickup",
+			"socialBooth": "included",
+			"openAir": "included",
+			"enclosed": "included",
+			"threesixty": "included"
 		},
 		{
-			"id": "column4",
-			"featured": "false",
-			"title": "360 Booth",
-			"price": "$999",
-			"time": "3 Hours Included",
-			"deliverySetupPickup": "included",
-			"digitalPrints": "included",
-			"customPrintDesign": "included",
-			"props": "included",
-			"dslr": "included",
-			"photoBoothHost": "included",
-			"instantPrints": "included",
-			"additionalHours": "$150",
-			"includedMileage": "Free Within 50 Miles"
+			"id": "row04",
+			"label": "Digital Prints",
+			"socialBooth": "included",
+			"openAir": "included",
+			"enclosed": "included",
+			"threesixty": "included"
+		},
+		{
+			"id": "row05",
+			"label": "Custom Print Design",
+			"socialBooth": "included",
+			"openAir": "included",
+			"enclosed": "included",
+			"threesixty": "included"
+		},
+		{
+			"id": "row06",
+			"label": "Props Included",
+			"socialBooth": "not-included",
+			"openAir": "included",
+			"enclosed": "included",
+			"threesixty": "included"
+		},
+		{
+			"id": "row07",
+			"label": "DSLR Camera",
+			"socialBooth": "not-included",
+			"openAir": "included",
+			"enclosed": "included",
+			"threesixty": "not-included"
+		},
+		{
+			"id": "row08",
+			"label": "Photo Booth Host",
+			"socialBooth": "not-included",
+			"openAir": "included",
+			"enclosed": "included",
+			"threesixty": "included"
+		},
+		{
+			"id": "row09",
+			"label": "Instant Prints",
+			"socialBooth": "not-included",
+			"openAir": "Two 2x6\"/Session",
+			"enclosed": "Two 2x6\"/Session",
+			"threesixty": "not-included"
+		},
+		{
+			"id": "row10",
+			"label": "Additional Hours",
+			"socialBooth": "$75",
+			"openAir": "$100",
+			"enclosed": "$100",
+			"threesixty": "$100"
+		},
+		{
+			"id": "row10",
+			"label": "Travel Fee",
+			"socialBooth": "Free With 50 Miles",
+			"openAir": "Free With 50 Miles",
+			"enclosed": "Free With 50 Miles",
+			"threesixty": "Free With 50 Miles"
 		}
 	]
 }
