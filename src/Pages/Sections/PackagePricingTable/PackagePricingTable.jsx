@@ -59,7 +59,7 @@ const PackagePricingTable = () => {
 													{item}
 												</Typography>
 												<Avatar
-													sx={{ width: 100 , height: 100}}
+													sx={{ width: 100, height: 100 }}
 													alt='150x150 placeholder'
 													src={placeholder}></Avatar>
 											</Stack>
@@ -68,7 +68,7 @@ const PackagePricingTable = () => {
 								)}
 							</TableRow>
 						</TableHead>
-						<TableBody>
+						<TableBody sx={{ 'tr:nth-child(odd)': { backgroundColor: 'grey.300' } }}>
 							{data.tableRows.slice(1).map((item, index) => (
 								<TableRow key={item.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
 									<TableCell component='th'>{item.label}</TableCell>
