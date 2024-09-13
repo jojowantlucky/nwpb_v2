@@ -10,9 +10,11 @@ import {
 	Typography,
 	Avatar,
 	Stack,
+	Paper,
 } from '@mui/material';
 import data from './data.json';
 import placeholder from './150x150-placeholder.webp';
+// import placeholder from './300x300-placeholder.webp';
 /*
 Social Booth
 Open-air Booth
@@ -23,8 +25,6 @@ Enclosed Booth
 */
 
 const columnHeaders = Object.values(data.tableRows[0]).slice(1);
-
-console.log('columnHeaders: ', columnHeaders);
 
 const PackagePricingTable = () => {
 	return (
@@ -41,45 +41,46 @@ const PackagePricingTable = () => {
 				</Typography>
 			</Grid>
 			<Grid item minWidth={'100vw'}>
-				<TableContainer component='paper'>
-					<Table sx={{ maxWidth: '60vw', margin: 'auto' }}>
-						<TableHead>
-							<TableRow>
-								{columnHeaders.map((item, index) =>
-									index === 0 ? (
-										<TableCell key={`header-${index}`}>
-											<Typography variant='h6' sx={{ fontWeight: 'bold' }}>
-												{item}
-											</Typography>
-										</TableCell>
-									) : (
-										<TableCell key={`header-${index}`} align='right'>
-											<Stack direction={'column'} spacing={2} alignItems={'center'}>
-												<Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>
+				<TableContainer>
+					<Paper>
+						<Table sx={{ maxWidth: '60vw', margin: 'auto' }}>
+							<TableHead>
+								<TableRow>
+									{columnHeaders.map((item, index) =>
+										index === 0 ? (
+											<TableCell key={`header-${index}`}>
+												<Typography variant='h6' sx={{ fontWeight: 'bold' }}>
 													{item}
 												</Typography>
-												<Avatar
-													sx={{ width: 100, height: 100 }}
-													alt='150x150 placeholder'
-													src={placeholder}></Avatar>
-											</Stack>
-										</TableCell>
-									)
-								)}
-							</TableRow>
-						</TableHead>
-						<TableBody sx={{ 'tr:nth-child(odd)': { backgroundColor: 'grey.300' } }}>
-							{data.tableRows.slice(1).map((item, index) => (
-								<TableRow key={item.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-									<TableCell component='th'>{item.label}</TableCell>
-									<TableCell align='center'>{item.socialBooth}</TableCell>
-									<TableCell align='center'>{item.openAir}</TableCell>
-									<TableCell align='center'>{item.enclosed}</TableCell>
-									<TableCell align='center'>{item.threesixty}</TableCell>
+											</TableCell>
+										) : (
+											<TableCell key={`header-${index}`} align='right'>
+												<Stack direction={'column'} spacing={2} alignItems={'center'}>
+													<Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>
+														{item}
+													</Typography>
+													<Avatar sx={{ width: 150, height: 150 }} alt='' src={placeholder} />
+												</Stack>
+											</TableCell>
+										)
+									)}
 								</TableRow>
-							))}
-						</TableBody>
-					</Table>
+							</TableHead>
+							<TableBody sx={{ 'tr:nth-child(odd)': { backgroundColor: 'grey.300' } }}>
+								{data.tableRows.slice(1).map((item, index) => (
+									<TableRow
+										key={`tableRow-${index}`}
+										sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+										<TableCell component='th'>{item.label}</TableCell>
+										<TableCell align='center'>{item.socialBooth}</TableCell>
+										<TableCell align='center'>{item.openAir}</TableCell>
+										<TableCell align='center'>{item.enclosed}</TableCell>
+										<TableCell align='center'>{item.threesixty}</TableCell>
+									</TableRow>
+								))}
+							</TableBody>
+						</Table>
+					</Paper>
 				</TableContainer>
 			</Grid>
 		</Grid>

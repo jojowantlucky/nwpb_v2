@@ -34,9 +34,7 @@ const PhotoBooths = () => {
 					loop
 					mousewheel
 					autoplay={{ delay: 2500, disableOnInteraction: false }}
-					pagination={{ clickable: true, dynamicBullets: true }}
-					// onSlideChange={() => console.log('slide change')}
-					onSwiper={(swiper) => console.log(swiper)}>
+					pagination={{ clickable: true, dynamicBullets: true }}>
 					<SwiperSlide>
 						<Paper className='de_testi opt-2'>
 							<blockquote>
