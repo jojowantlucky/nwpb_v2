@@ -42,8 +42,16 @@ const PackagePricingTable = () => {
 			</Grid>
 			<Grid item minWidth={'100vw'}>
 				<TableContainer>
-					<Paper>
-						<Table sx={{ maxWidth: '60vw', margin: 'auto' }}>
+					<Paper
+						elevation={14}
+						sx={{
+							margin: 'auto',
+							marginTop: '2rem',
+							marginBottom: '2rem',
+							maxWidth: '60vw',
+							padding: '4rem',
+						}}>
+						<Table>
 							<TableHead>
 								<TableRow>
 									{columnHeaders.map((item, index) =>
@@ -71,11 +79,23 @@ const PackagePricingTable = () => {
 									<TableRow
 										key={`tableRow-${index}`}
 										sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-										<TableCell component='th'>{item.label}</TableCell>
-										<TableCell align='center'>{item.socialBooth}</TableCell>
-										<TableCell align='center'>{item.openAir}</TableCell>
-										<TableCell align='center'>{item.enclosed}</TableCell>
-										<TableCell align='center'>{item.threesixty}</TableCell>
+										<TableCell component='th'>
+											<Typography variant={'subtitle1'} sx={{ fontWeight: 'bold' }}>
+												{item.label}
+											</Typography>
+										</TableCell>
+										<TableCell align='center'>
+											<Typography variant={item.variant}>{item.socialBooth}</Typography>
+										</TableCell>
+										<TableCell align='center'>
+											<Typography variant={item.variant}>{item.openAir}</Typography>
+										</TableCell>
+										<TableCell align='center'>
+											<Typography variant={item.variant}>{item.enclosed}</Typography>
+										</TableCell>
+										<TableCell align='center'>
+											<Typography variant={item.variant}>{item.threesixty}</Typography>
+										</TableCell>
 									</TableRow>
 								))}
 							</TableBody>

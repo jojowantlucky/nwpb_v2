@@ -1,6 +1,7 @@
-{ "pageCopy" : {
-	"title": "Photo Booth Packages"
-},
+{
+	"pageCopy": {
+		"title": "Photo Booth Packages"
+	},
 	"tableRows": [
 		{
 			"id": "row00",
@@ -13,90 +14,113 @@
 		{
 			"id": "row01",
 			"label": "Price",
+			"labelVariant": "subtitle1",
 			"socialBooth": "$599",
 			"openAir": "$899",
 			"enclosed": "$899",
-			"threesixty": "$999"
+			"threesixty": "$999",
+			"variant": "h6"
 		},
 		{
 			"id": "row02",
 			"label": "Included Time",
+			"labelVariant": "subtitle1",
+
 			"socialBooth": "3 Hours",
 			"openAir": "3 Hours",
 			"enclosed": "3 Hours",
-			"threesixty": "3 Hours"
+			"threesixty": "3 Hours",
+			"variant": "p"
 		},
 		{
 			"id": "row03",
 			"label": "Delivery, Setup, & Pickup",
+			"labelVariant": "subtitle1",
 			"socialBooth": "included",
 			"openAir": "included",
 			"enclosed": "included",
-			"threesixty": "included"
+			"threesixty": "included",
+			"variant": "p"
 		},
 		{
 			"id": "row04",
 			"label": "Digital Prints",
+			"labelVariant": "subtitle1",
 			"socialBooth": "included",
 			"openAir": "included",
 			"enclosed": "included",
-			"threesixty": "included"
+			"threesixty": "included",
+			"variant": "p"
 		},
 		{
 			"id": "row05",
 			"label": "Custom Print Design",
+			"labelVariant": "subtitle1",
 			"socialBooth": "included",
 			"openAir": "included",
 			"enclosed": "included",
-			"threesixty": "included"
+			"threesixty": "included",
+			"variant": "p"
 		},
 		{
 			"id": "row06",
 			"label": "Props Included",
+			"labelVariant": "subtitle1",
 			"socialBooth": "not-included",
 			"openAir": "included",
 			"enclosed": "included",
-			"threesixty": "included"
+			"threesixty": "included",
+			"variant": "p"
 		},
 		{
 			"id": "row07",
 			"label": "DSLR Camera",
+			"labelVariant": "subtitle1",
 			"socialBooth": "not-included",
 			"openAir": "included",
 			"enclosed": "included",
-			"threesixty": "not-included"
+			"threesixty": "not-included",
+			"variant": "p"
 		},
 		{
 			"id": "row08",
 			"label": "Photo Booth Host",
+			"labelVariant": "subtitle1",
 			"socialBooth": "not-included",
 			"openAir": "included",
 			"enclosed": "included",
-			"threesixty": "included"
+			"threesixty": "included",
+			"variant": "p"
 		},
 		{
 			"id": "row09",
 			"label": "Instant Prints",
+			"labelVariant": "subtitle1",
 			"socialBooth": "not-included",
 			"openAir": "Two 2x6\"/Session",
 			"enclosed": "Two 2x6\"/Session",
-			"threesixty": "not-included"
+			"threesixty": "not-included",
+			"variant": "p"
 		},
 		{
 			"id": "row10",
 			"label": "Additional Hours",
+			"labelVariant": "subtitle1",
 			"socialBooth": "$75",
 			"openAir": "$100",
 			"enclosed": "$100",
-			"threesixty": "$100"
+			"threesixty": "$100",
+			"variant": "p"
 		},
 		{
 			"id": "row10",
 			"label": "Travel Fee",
+			"labelVariant": "subtitle1",
 			"socialBooth": "Free With 50 Miles",
 			"openAir": "Free With 50 Miles",
 			"enclosed": "Free With 50 Miles",
-			"threesixty": "Free With 50 Miles"
+			"threesixty": "Free With 50 Miles",
+			"variant": "p"
 		}
 	]
 }
