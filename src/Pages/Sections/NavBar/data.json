@@ -2,10 +2,14 @@
 	"items": [
 		{ "label": "Home", "url": "#home" },
 		{ "label": "Photo Booths", "url": "#photobooths" },
-		{ "label": "Prints", "url": "#prints" },
+		{ "label": "Pricing", "url": "#pricing" },
+		{ "label": "Reviews", "url": "#bookwithconfidence" },
 		{ "label": "Photo Books", "url": "#photobooks" },
+		{ "label": "Backdrops", "url": "#backdrops" },
+
 		{ "label": "Options", "url": "#options" },
 		{ "label": "Contact", "url": "#contactus" },
+		{ "label": "FAQs", "url": "#faqs" },
 		{ "label": "Login", "url": "https://noteworthy-djs.checkcherry.com/users/sign_in" }
 	]
 }
