@@ -5149,14 +5149,6 @@ ul#mainmenu {
   text-align: center;
   outline: none;
 }
-#mainmenu a span {
-  height: 2px;
-  display: block;
-  background: #fff;
-  margin-top: -5px;
-  width: 0;
-  margin-left: 50%;
-}
 #mainmenu a.active span {
   width: 100%;
   margin-left: 0%;

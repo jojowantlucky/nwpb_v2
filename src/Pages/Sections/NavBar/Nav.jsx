@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data.json';
-import { Grid, Typography } from '@mui/material';
+import { Grid, Link, Typography } from '@mui/material';
 
 const Nav = () => {
 	return (
@@ -18,9 +18,11 @@ const Nav = () => {
 					alignItems={'center'}>
 					{data.items.map((item, index) => (
 						<Grid key={index} item>
-							<Typography variant='subheader1' color={'grey.200'}>
-								{item.label}
-							</Typography>
+							<Link href={item.url} color='info' underline='none'>
+								<Typography variant='subheader1' color={'grey.200'}>
+									{item.label}
+								</Typography>
+							</Link>
 						</Grid>
 					))}
 				</Grid>
