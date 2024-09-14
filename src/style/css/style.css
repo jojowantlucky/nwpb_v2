@@ -4557,8 +4557,12 @@ body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.tra
 body .owl-stage .owl-item {
   display: inline-block;
 }
-body #homepage {
-  display: block;
+body#homepage {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+body#homepage::-webkit-scrollbar {
+  display: none;
 }
 .row {
   display: flex;

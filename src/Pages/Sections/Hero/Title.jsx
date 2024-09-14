@@ -3,7 +3,7 @@ import { Typography, Grid } from '@mui/material';
 
 const Title = () => {
 	return (
-		<Grid item xs={12} className='mask'>
+		<Grid item xs={12} className='mask' sx={{ paddingLeft: '0' }}>
 			<Typography
 				variant='h2'
 				color={'grey.400'}
