@@ -79,6 +79,14 @@
 			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
 			"price": "149",
 			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
+		},
+		{
+			"id": "upgrade10",
+			"name": "Up-Lighting",
+			"description": "Add more time to any of our packages. ",
+			"thumbnailUrl": "http://www.noteworthyphotobooths.com/images/upgrades/extra-hour.webp",
+			"price": "149",
+			"buttonUrl": "https://noteworthy-djs.checkcherry.com/reservation/set_event?event_category_id=20952"
 		}
 	]
 }

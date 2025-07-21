@@ -15,7 +15,7 @@ import 'swiper/css/autoplay';
 3. Inlude Yelp, WW, TK, Google, testimonials, BBB 
 */
 
-const PhotoBooths = () => {
+const PreviousClients = () => {
 	return (
 		<Box
 			component='section'
@@ -23,7 +23,7 @@ const PhotoBooths = () => {
 			aria-label='section-testimonial'
 			data-bgcolor='#f8f8f8'>
 			<Typography variant='h4' color='secondary' p={'2rem'} textAlign={'center'} mb={'3rem'}>
-				Book With Confidence
+				Previous Clients
 			</Typography>
 			<Container
 				sx={{ backgroundColor: 'rgb(248, 248, 248)', minWidth: '100vw', backgroundSize: 'cover' }}>
@@ -168,4 +168,4 @@ const PhotoBooths = () => {
 	);
 };
 
-export default PhotoBooths;
+export default PreviousClients;

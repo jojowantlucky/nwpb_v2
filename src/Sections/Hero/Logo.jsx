@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'material-ui-image';
-import logo from '../../../images/sections/hero/logo-300x300.png';
+import logo from '../../images/sections/hero/logo-300x300.png';
 import { Grid } from '@mui/material';
 
 const Logo = () => {

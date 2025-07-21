@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from './Nav';
 import { Grid, Box } from '@mui/material';
 
-import logo from '../../../images/sections/nav-bar/logo-140x34.png';
+import logo from '../../images/sections/nav-bar/logo-140x34.png';
 
 const NavBar = () => {
 	return (

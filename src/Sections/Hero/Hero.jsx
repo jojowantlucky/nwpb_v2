@@ -12,7 +12,7 @@ const Hero = () => {
 			id='hero'
 			data-speed='5'
 			data-type='background'
-			sx={{ padding: '0 !important', overflow: 'hidden' }}>
+			sx={{ padding: '0 !important', overflow: 'hidden', width: '100%' }}>
 			<Box>
 				<Box sx={{ width: '100%', position: 'absolute', zIndex: '10', marginTop: '0 !important' }}>
 					<Grid
@@ -22,8 +22,7 @@ const Hero = () => {
 						m={'auto'}
 						alignContent='center'
 						alignItems='center'
-						spacing={8}
-						>
+						spacing={8}>
 						<Logo />
 						<Title />
 						<CTAs />
