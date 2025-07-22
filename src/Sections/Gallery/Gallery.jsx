@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
 import GalleryNav from './GalleryNav';
-import GalleryItems from './GalleryItems';
+import GalleryItem from './GalleryItem';
+import galleryItems from './galleryItems.json';
+
+const filterSelection = (selection) => {
+	//filter selection here
+	return;
+};
 
 const Gallery = () => {
 	const [selectedCategory, setSelectedCategory] = useState('all');
 	const handleCategoryClick = (selection) => {
 		setSelectedCategory(selection);
+		console.log('Selected Category: ', selection);
 	};
 
 	return (
@@ -19,8 +26,12 @@ const Gallery = () => {
 			m={0}
 			aria-label='section-portfolio'
 			data-bgcolor='#f8f8f8'>
-			<GalleryNav handleClick={handleCategoryClick} selectedCategory={selectedCategory} />
-			<GalleryItems selectedCategory={selectedCategory} />
+			<GalleryNav handleClick={handleCategoryClick} />
+			<div
+				id='gallery'
+				className='gallery full-gallery de-gallery pf_full_width pf_3_cols sequence'>
+				<GalleryItem galleryItems={galleryItems}  />
+			</div>
 		</Grid>
 	);
 };

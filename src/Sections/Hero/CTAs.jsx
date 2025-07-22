@@ -1,4 +1,4 @@
-import { Button, Grid, IconButton } from '@mui/material';
+import { Link, Button, Grid, IconButton } from '@mui/material';
 import React from 'react';
 import CallRoundedIcon from '@mui/icons-material/CallRounded';
 import RequestQuoteRoundedIcon from '@mui/icons-material/RequestQuoteRounded';
@@ -15,29 +15,33 @@ const CTAs = () => {
 				alignContent='center'
 				minWidth={'100vw'}>
 				<Grid item>
-					<IconButton
-						className='pulse'
-						color='primary'
-						sx={{
-							backgroundColor: 'background.button.main',
-							borderRadius: '50%',
-							padding: '2rem',
-							boxShadow: '10',
-						}}>
-						<CallRoundedIcon sx={{ fontSize: '6rem' }} />
-					</IconButton>
+					<Link href='tel:5037700382'>
+						<IconButton
+							className='pulse'
+							color='primary'
+							sx={{
+								backgroundColor: 'background.button.main',
+								borderRadius: '50%',
+								padding: '2rem',
+								boxShadow: '10',
+							}}>
+							<CallRoundedIcon sx={{ fontSize: '6rem' }} />
+						</IconButton>
+					</Link>
 				</Grid>
 				<Grid item>
-					<IconButton
-						className='pulse'
-						color='primary'
-						sx={{
-							backgroundColor: 'background.button.secondary',
-							padding: '2rem',
-							boxShadow: '10',
-						}}>
-						<RequestQuoteRoundedIcon sx={{ fontSize: '6rem' }} />
-					</IconButton>
+					<Link href='https://noteworthy-djs.checkcherry.com/reservation/event_type'>
+						<IconButton
+							className='pulse'
+							color='primary'
+							sx={{
+								backgroundColor: 'background.button.secondary',
+								padding: '2rem',
+								boxShadow: '10',
+							}}>
+							<RequestQuoteRoundedIcon sx={{ fontSize: '6rem' }} />
+						</IconButton>
+					</Link>
 				</Grid>
 			</Grid>
 		</Grid>

@@ -23,7 +23,7 @@ const BoothsPrintsBooks = () => {
 						<PhotoCameraIcon color='primary' fontSize='large' />
 					</Grid>
 					<Grid item xs={9}>
-						<Link underline='none' href='#photo-books'>
+						<Link underline='none' href='/photobooths'>
 							<Typography color='secondary' variant='h5'>
 								Photo Booths
 							</Typography>
@@ -42,7 +42,7 @@ const BoothsPrintsBooks = () => {
 						<PortraitIcon color='primary' fontSize='large' />
 					</Grid>
 					<Grid item xs={9}>
-						<Link underline='none' href='#custom-prints'>
+						<Link underline='none' href='/custom-prints'>
 							<Typography color='secondary' variant='h5'>
 								Custom Prints
 							</Typography>
@@ -61,7 +61,7 @@ const BoothsPrintsBooks = () => {
 						<AutoStoriesIcon color='primary' fontSize='large' />
 					</Grid>
 					<Grid item xs={9}>
-						<Link underline='none' href='#photo-books'>
+						<Link underline='none' href='/photobooks'>
 							<Typography color='secondary' variant='h5'>
 								Photo Books
 							</Typography>
