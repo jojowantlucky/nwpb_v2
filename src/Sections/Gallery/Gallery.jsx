@@ -2,20 +2,25 @@ import React, { useState } from 'react';
 import { Grid } from '@mui/material';
 import GalleryNav from './GalleryNav';
 import GalleryItem from './GalleryItem';
-import galleryItems from './galleryItems.json';
+import allGalleryImages from './allGalleryImages.json';
 
-const filterSelection = (selection) => {
-	//filter selection here
-	return;
-};
-
+console.log(allGalleryImages);
 const Gallery = () => {
 	const [selectedCategory, setSelectedCategory] = useState('all');
+	const [galleryItems, setGalleryItems] = useState(allGalleryImages);
 	const handleCategoryClick = (selection) => {
 		setSelectedCategory(selection);
-		console.log('Selected Category: ', selection);
+		setGalleryItems(allGalleryImages.category.includes(selectedCategory));
 	};
 
+	const filterBySelection = (selection) => {
+		if (selection.category.includes(selectedCategory)) {
+			return true;
+		}
+		return false;
+	};
+
+	console.log(galleryItems);
 	return (
 		<Grid
 			component='section'
@@ -26,11 +31,14 @@ const Gallery = () => {
 			m={0}
 			aria-label='section-portfolio'
 			data-bgcolor='#f8f8f8'>
-			<GalleryNav handleClick={handleCategoryClick} />
+			<GalleryNav handleClick={handleCategoryClick} selectedCategory={selectedCategory} />
 			<div
 				id='gallery'
 				className='gallery full-gallery de-gallery pf_full_width pf_3_cols sequence'>
-				<GalleryItem galleryItems={galleryItems}  />
+				{galleryItems.map((galleryItem) => (
+					<GalleryItem galleryItem={galleryItem} />
+				))}
+				{/* <GalleryItem galleryItems={galleryItems} /> */}
 			</div>
 		</Grid>
 	);
